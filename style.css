@@ -41,7 +41,7 @@ a{
 /* cabeçalho */
 
 .cabecalho{
-    width: 100%;
+    width: 98%;
     display: flex;
     background-color: var(--cor-sub);
     color: var(--cor-secundaria);
@@ -75,27 +75,68 @@ a{
     justify-content: center;
 }
 
+/* Paginas- home */
 .cabecalho__menu{
     padding: 4% 1% 1% 12%;
     display: flex;
     gap: 80px;
-    
+}
+
+.cabecalho__menu__pagina:hover {
+    border: 3px solid;
+    border-color: #22d4fd;
 }
 
 .cabecalho__menu__pagina{
+    border-radius: 3px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #8d93a0;
+    color: #686D76;
+    font-family: 'krona One', sans-serif;
 }
 
 /* sobre - outra pagina */
 .sobre {
+    position: absolute;
+    top: 40%;
     margin-bottom: 40px;
+    font-size: 20pt;
+    font-family: 'krona One', sans-serif;
+    color: #22d4fd;
+    padding-left: 2%;
+}
+
+.sobre p {
+    padding-top: 2%;
+    padding-left: 2%;
+    font-size: 20pt;
 }
 
 /* contato */
 
 .contato {
     text-align: center;
+    position: absolute;
+    left: 28%;
+    top: 100%;
+    padding: 5%;
+}
+
+.fale-h1 {
+    position: absolute;
+    left: 3%;
+    top: 60%;
+    font-family: 'krona One', sans-serif;
+    color: #22d4fd;
+}
+
+.logo-what {
+    position: absolute;
+    left: 3%;
+    top: 75%;
+    border-color: #000000;
 }
 
 .contato form {
@@ -125,10 +166,14 @@ a{
     cursor: pointer;
 }
 
+.contato button:active {
+    background-color: #ff0000;
+}
+
 /* Serviços */
  
 main {
-    padding: 10%;
+    padding: 9%;
     display: flex; 
     
 }
@@ -139,8 +184,7 @@ main {
     gap: 5px;
     position: relative;
     left: -18.7%;
-
-    
+    font-family: 'montserrat';
 }
 .servicos__titulo{
     margin-top: -5%;
@@ -148,6 +192,7 @@ main {
     left: 7%;
 }
 
+/* UL */
 .container__servico{
     display: flex;
     flex-direction: row;
@@ -160,7 +205,11 @@ main {
 }
 
 .servicos li {
-    list-style: none; 
+    list-style: none;
+}
+
+.servicos p{ 
+    font-family: 'montserrat';
 }
 
 img{
@@ -225,7 +274,6 @@ p{
         width: 98%;  
     }
     .cabecalho__logo {
-        margin-left:  ;
         position: relative;
     }
 }
