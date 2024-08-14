@@ -1,48 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat+Alternates&family=Montserrat:wght@100..900&display=swap');
 
-
-body {
-    font-family: sans-serif;
+*{
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 28px;
-}
-
-main {
+a{
+    color:var(--cor-terciaria);
+    font-size: 20px;
     padding: 20px;
+    font-family: sans-serif;
 }
 
-.servicos {
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+    --cor-sub: #686D76;
+    --font-primario: 'krona One', sans-serif;
+    --font-secundario: 'montserrat, sans-serife';
+}
+
+
+.corpo {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria); 
+    width: 100%;
+    height: 100vh;
+    
+        /* background-image: url('imagem/fundo_p.png'); */
+        /* background-repeat: no-repeat;                                       Impede a repetição da imagem */
+        /* background-size: cover;                                            Ajusta a imagem para cobrir toda a área */
+        /* background-position: center;                                      Centraliza a imagem */
+    
+}
+
+
+/* cabeçalho */
+
+.cabecalho{
+    width: 100%;
+    display: flex;
+    background-color: var(--cor-sub);
+    color: var(--cor-secundaria);
+    padding-left: 2%; 
+    gap: 200px;
+}
+
+.cabecalho__container{
+    display: block;
+    font-family: var(--font-primario);
+}
+
+.cabecalho__logo{
+    margin-top: 25%;
+    width: 140px;
+    height: 160px;
+    display: flex;
+    border: none;
+    left: -34 0px;
+    padding: 10px;
+ 
+}
+
+.cabecalho__titulo{
+    margin-top: 5%;
+    font-size: 40px;
     margin-bottom: 10px;
+    font-family: sans-serif;
+    top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-.servicos ul {
-    list-style: none;
-    padding: 0;
+.cabecalho__menu{
+    padding: 4% 1% 1% 12%;
+    display: flex;
+    gap: 80px;
+    
 }
 
-.servicos li {
-    margin-bottom: 40px;
+.cabecalho__menu__pagina{
+    text-decoration: none;
+    font-size: 24px;
 }
 
+/* sobre - outra pagina */
 .sobre {
     margin-bottom: 40px;
 }
+
+/* contato */
 
 .contato {
     text-align: center;
@@ -53,9 +103,9 @@ main {
     margin: 0 auto;
     width: 500px;
 }
+/* porque estava essa tag aqui lock */
+.contato label{
 
-.contato label {
-    display: block;
     margin-bottom: 5px;
 }
 
@@ -75,24 +125,107 @@ main {
     cursor: pointer;
 }
 
+/* Serviços */
+ 
+main {
+    padding: 10%;
+    display: flex; 
+    
+}
+
+.servicos {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: relative;
+    left: -18.7%;
+
+    
+}
+.servicos__titulo{
+    margin-top: -5%;
+    position: relative;
+    left: 7%;
+}
+
+.container__servico{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.servicos ul {
+    display: flex;
+    list-style: none;
+}
+
+.servicos li {
+    list-style: none; 
+}
+
 img{
     width: 300px;
     height: 168px;
+    border-radius: 5px;
+    border: var(--cor-hover);
+    border-style: solid ;
 }
-    
-   
+img:hover{
+    transform: scale(1.3);
+    transition: 0.6s;
+}
+p{
+    display: flex;
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    font-family: var(--font-secundario);
+    justify-content: center;
+}
 
 .container__servico{
     font-family: inter;
     font-size: 24px;
     font-weight: 400;
-    
-    
 }
 
-footer {
-    background-color: #f0f0f0;
+/* rodapé */
+/* footer {
+    background-color: var(--cor-sub);
     color: #666;
     text-align: center;
     padding: 20px 0;
+} */
+
+.rodape{
+    padding: 24px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    font-family: var(--font-secundario);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+   
+}
+
+@media (min-width: 1440px ) {
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 28
+        px;
+    }
+
+    header {
+        padding: 10px 0;
+        padding-left: 10px;
+        width: 98%;  
+    }
+    .cabecalho__logo {
+        margin-left:  ;
+        position: relative;
+    }
 }
