@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat+Alternates&family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&family=Lilita+One&family=New+Amsterdam&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@100..900&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Russo+One&display=swap');
 
 *{
     margin: 0;
@@ -15,11 +19,17 @@ a{
 :root{
     --cor-primaria: #000000;
     --cor-secundaria: #f6f6f6;
+    --cor-terciaria-one:#29447f;
     --cor-terciaria: #22d4fd;
     --cor-hover: #272727;
+    --cor-hover-two: #263b5c;
     --cor-sub: #686D76;
+    --font-primaria-one:  "Archivo Black", sans-serif;
     --font-primario: 'krona One', sans-serif;
     --font-secundario: 'montserrat, sans-serife';
+    --font-lilita-one:"Lilita One", sans-serif;
+    --font-arquivo-black:  "Archivo Black", sans-serif;
+    --cor-anton: "Anton", sans-serif;
 }
 
 
@@ -67,9 +77,10 @@ a{
 
 .cabecalho__titulo{
     margin-top: 5%;
-    font-size: 40px;
+    font-size: 70px;
     margin-bottom: 10px;
-    font-family: sans-serif;
+    font-family: var(--font-primaria-one);
+    font-weight: 400;
     top: 10px;
     display: flex;
     justify-content: center;
@@ -83,8 +94,8 @@ a{
 }
 
 .cabecalho__menu__pagina:hover {
-    border: 3px solid;
-    border-color: #22d4fd;
+    border: 2px solid;
+    border-color:var(--cor-terciaria-one)
 }
 
 .cabecalho__menu__pagina{
@@ -93,7 +104,7 @@ a{
     font-size: 18px;
     padding: 5px;
     background-color: #8d93a0;
-    color: #686D76;
+    color: var(--cor-terciaria-one );
     font-family: 'krona One', sans-serif;
 }
 
@@ -256,24 +267,37 @@ p{
    
 }
 
-@media (min-width: 1440px ) {
-    h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
-        padding: 10px;
+@media (max-width: 1000px) {
+    .cabecalho{
+        padding: 5%;
+        gap: 20px;
     }
 
-    h2 {
-        font-size: 28
-        px;
+    .cabecalho__titulo{
+        font-size: 49px;
+        display: block;
+
+    }
+    .cabecalho__subtitulo{
+        width: 80%;
+        justify-content: center;
+        
+    }
+    .cabecalho__menu{
+        justify-content: center;
     }
 
-    header {
-        padding: 10px 0;
-        padding-left: 10px;
-        width: 98%;  
-    }
-    .cabecalho__logo {
+    .cabecalho__menu__pagina{
+       justify-content: center;
+        margin-left: -20px;
+        margin-right: -45px;
         position: relative;
+        left: -80px;
+    }
+    
+    .servicos{
+        display: block;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
