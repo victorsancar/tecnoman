@@ -114,6 +114,7 @@ a{
 
 /* sobre - outra pagina */
 .sobre {
+    margin-top: 10%;
     position: absolute;
     top: 40%;
     margin-bottom: 40px;
