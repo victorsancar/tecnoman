@@ -51,12 +51,11 @@ a{
 /* cabeçalho */
 
 .cabecalho{
-    width: 98%;
+    width: 100%;
     display: flex;
     background-color: var(--cor-sub);
-    color: var(--cor-secundaria);
-    padding-left: 2%; 
-    gap: 200px;
+    color: var(--cor-secundaria); 
+    height: 140px;
 }
 
 .cabecalho__container{
@@ -66,35 +65,41 @@ a{
 
 .cabecalho__logo{
     margin-top: 5%;
-    width: 140px;
-    height: 160px;
+    width: 65px;
+    height: 80px;
     display: flex;
     border: none;
     position: absolute;
     padding: 10px;
+    top: -5px;
+    left: 11px;
  
 }
 
 .cabecalho__titulo{
     margin-top: 5%;
-    font-size: 70px;
+    font-size: 20pt;
     margin-bottom: 10px;
     font-family: var(--font-primaria-one);
     font-weight: 400;
     top: 10px;
     display: flex;
-    
+    position: relative;
+    left: 180px;
 }
 .cabecalho__subtitulo{
-    font-size: 40px;
+    font-size: 8.3pt;
+    position: relative;
+    left: 90px;
 }
 
 /* Paginas- home */
 .cabecalho__menu{
     padding: 4% 1% 1% 12%;
     display: flex;
-    gap: 80px;
-    
+    gap: 30px;
+    position: relative;
+    left: 70px;
 }
 
 .cabecalho__menu__pagina:hover {
@@ -105,7 +110,7 @@ a{
 .cabecalho__menu__pagina{
     border-radius: 3px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 8pt;
     padding: 5px;
     background-color: #8d93a0;
     color: var(--cor-terciaria-one );
@@ -116,12 +121,13 @@ a{
 .sobre {
     margin-top: 10%;
     position: absolute;
-    top: 40%;
+    top: 60%;
     margin-bottom: 40px;
     font-size: 20pt;
     font-family: 'krona One', sans-serif;
     color: #22d4fd;
     padding-left: 2%;
+    left: -0%;
 }
 
 .sobre p {
@@ -130,13 +136,17 @@ a{
     font-size: 20pt;
 }
 
+.sobre__titulo{
+    margin-top: -37%;
+}
+
 /* contato(fale conosco)
  */
 
 .contato {
     text-align: center;
     position: absolute;
-    left: 28%;
+    left: -5%;
     top: 100%;
     padding: 5%;
 }
@@ -154,16 +164,24 @@ a{
     left: 3%;
     top: 75%;
     border-color: #000000;
+    height: 120px;
+    width: 200px;
 }
 
 .contato form {
     display: inline-block;
     margin: 0 auto;
     width: 500px;
+    position: relative;
+    right: 30%;
 }
+.contato h2{
+    position: relative;
+    right: 30%;             /* porque não estava indo pro lado   */
+}
+
 /* porque estava essa tag aqui lock */
 .contato label{
-
     margin-bottom: 5px;
 }
 
@@ -197,7 +215,7 @@ main {
 
 .servicos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 5px;
     position: relative;
     left: -18.7%;
@@ -216,6 +234,12 @@ main {
     gap: 5px;
 }
 
+.servicos h2 {
+    position: relative;
+    left: 80px;
+    padding-top: 30px;
+}
+
 .servicos ul {
     display: flex;
     list-style: none;
@@ -226,15 +250,23 @@ main {
 }
 
 .servicos p{ 
+    display: flex;
+    flex-direction: column;
     font-family: 'montserrat';
+    position: relative;
+    left: 80px;
+    padding-top: 60px;
 }
 
 img{
-    width: 300px;
-    height: 168px;
+    width: 180px;
+    height: 88px;
     border-radius: 5px;
     border: var(--cor-hover);
     border-style: solid ;
+    position: relative;
+    left: 80px;
+    top: 50px;
 }
 img:hover{
     transform: scale(1.3);
@@ -270,9 +302,221 @@ p{
     font-size: 1.5rem;
     text-align: center;
     font-weight: 400;
-   
+    position: relative;
+    top: 65%;
 }
 
+@media (min-width: 1440px) {
+    
+
+    .cabecalho{
+        display: flex;
+        gap: 200px;
+        height: 400px;
+    }
+
+
+    .cabecalho__logo{
+        margin-top: 5%;
+        width: 140px;
+        height: 160px;
+        display: flex;
+        border: none;
+        position: absolute;
+        padding: 10px;
+    
+    }
+
+    .cabecalho__titulo{
+        margin-top: 5%;
+        font-size: 50pt;
+        margin-bottom: 10px;
+        font-weight: 400;
+        top: 10px;
+        
+    }
+    .cabecalho__subtitulo{
+        font-size: 25pt;
+    }
+
+
+
+    .cabecalho__menu__pagina:hover {
+        border: 2px solid;
+
+    }
+
+    .cabecalho__menu__pagina{
+        font-size: 18pt;
+        padding: 10px;
+    }
+
+    .servicos{
+        display: flex;
+        flex-direction: row;
+        gap: 10px; 
+        text-align: center; 
+        position: relative;
+        right: 20%;
+    }
+
+    .container__servico{
+        display: flex;
+        margin-left: -7.7%;
+    }
+
+    .servicos__titulo{
+        display: flex;
+        margin-left: 5%;
+    }
+
+    img{
+        width: 280px;
+        height: 150px;
+    }
+
+    .sobre{
+        display: flex;
+        margin-left: -20%;
+        margin-top: 1%;
+        position: relative;
+        left: -20%;
+        top: 250px;
+    }
+
+    .sobre__titulo{
+        font-size: 34px;
+        position: relative;
+        left: 30%;
+        top: 300px;
+    }
+
+    .rodape{
+        position: relative;
+        top: 10.2%;
+    }
+}
+
+/* contato */
+.contato {
+    text-align: center;
+    position: absolute;
+    left: 28%;
+    top: 100%;
+    padding: 5%;
+
+}
+ 
+/* Tablet */
+
+@media (min-width: 834px ){
+        
+
+    .cabecalho{
+        display: flex;
+        gap: 90px;
+        height: 240px;
+    }
+
+
+    .cabecalho__logo{
+        margin-top: 5%;
+        width: 140px;
+        height: 160px;
+        display: flex;
+        border: none;
+        position: absolute;
+        padding: 10px;
+    
+    }
+
+    .cabecalho__titulo{
+        margin-top: 5%;
+        font-size: 35pt;
+        margin-bottom: 10px;
+        font-weight: 400;
+        top: 0px;
+        left: 80px;
+        
+    }
+    .cabecalho__subtitulo{
+        font-size: 14.4pt;
+    }
+
+
+
+    .cabecalho__menu__pagina:hover {
+        border: 2px solid;
+
+    }
+
+    .cabecalho__menu__pagina{
+        font-size: 13pt;
+        padding: 10px;
+    }
+
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        gap: 80px; 
+        text-align: center;
+    }
+
+    .container__servico{
+        display: flex;
+        margin-left: -7.7%;
+    }
+
+    .servicos__titulo{
+        display: flex;
+        margin-left: 5%;
+        font-size: 25pt;
+    }
+
+    img{
+        width: 330px;
+        height: 200px;
+    }
+
+    .sobre{
+        display: flex;
+        margin-left: -20%;
+        margin-top: 1%;
+        position: relative;
+        left: -20%;
+        top: 250px;
+    }
+
+    .sobre__titulo{
+        font-size: 34px;
+        position: relative;
+        left: 30%;
+        top: 160%;
+    }
+
+    .rodape{
+        position: relative;
+        top: 37.2%;
+    }
+
+    /* contato */
+    .contato {
+        text-align: center;
+        position: absolute;
+        left: 28%;
+        top: 100%;
+        padding: 5%;
+
+    }
+
+    .logo-what {
+        width: 270px;
+        height: 200px;
+    }
+}
+
+
+ /*  
 @media (max-width: 1200px) {
     .cabecalho{
         padding: 25%;
@@ -326,5 +570,5 @@ p{
         margin-top: 17%;
     }
 }
-
+*/
 
