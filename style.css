@@ -295,6 +295,7 @@ p{
 } */
 
 .rodape{
+    margin-right: -20%;
     padding: 24px;
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
@@ -308,31 +309,42 @@ p{
 
 @media (min-width: 1440px) {
     
-
+    .corpo{
+    width: 83.3%;
+    height: 100vh
+    }
     .cabecalho{
         display: flex;
-        gap: 200px;
-        height: 400px;
+        padding: 1% 0% 0% 20% ; 
+        justify-content: center;
+        
     }
 
 
     .cabecalho__logo{
-        margin-top: 5%;
+        top: -9%;
         width: 140px;
         height: 160px;
         display: flex;
         border: none;
         position: absolute;
-        padding: 10px;
-    
+        
+    }
+
+    .cabecalho__container{
+        margin-left: -15%;
+          
     }
 
     .cabecalho__titulo{
         margin-top: 5%;
         font-size: 50pt;
-        margin-bottom: 10px;
         font-weight: 400;
         top: 10px;
+        position: relative;
+        margin-left: -30;
+        justify-content: center;
+        
         
     }
     .cabecalho__subtitulo{
