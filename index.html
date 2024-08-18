@@ -6,55 +6,66 @@
     <title>Tecnoman - Segurança Eletrônica</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sobre.html">
-    <link rel="stylesheet" type="" href="faleconosco.html">
 </head>
 
 
-<body class="corpo">
-    <header class="cabecalho">
-        <div>
-        <img src="imagem/logo-ok.png" alt="logo do Tecnoman" class="cabecalho__logo">
-        </div>
-        <nav class="cabecalho__container">
-           <hgroup>
-            <h1 class="cabecalho__titulo">TECHNOMAN</h1>
-            <h2 class="cabecalho__subtitulo">Segurança Eletrônica para o seu Lar ou sua empresa</h2>
-           </hgroup>
 
-        <div class="cabecalho__menu">
-            <a class="cabecalho__menu__pagina" href="index.html">Home</a>
-            <a class="cabecalho__menu__pagina" href="sobre.html">Quem somos</a>
-            <a class="cabecalho__menu__pagina" href="faleconosco.html">Fale Conosco</a>
-        </div>
-        </nav>  
-    </header>                                                                                                                                
+<body>
+    
+    <header class="cabecalho">
+        <img src="imagem/logo-ok.png" alt="logo do Tecnoman" class="cabecalho__logo">
+        <nav class="cabecalho__container">
+            <h1 class="cabecalho__titulo">Tecnoman</h1>
+            <h2 class="cabecalho__subtitulo">Segurança Eletrônica para o seu Lar ou Negócio</h2>
+        </nav>
+        <a href="sobre.html">Quem somos</a>
+        
+    </header>
+
 
     <main>
         <section class="servicos">
-             <h2 class="servicos__titulo">Serviços</h2>   
+            <h2>Serviços</h2>
             <ul class="container__servico"></ul>
-                 <li><img src="imagem/alarmes.jpg" alt="Imagens de alarmes">
+                 <li><img src="imagem/alarmes.jpg" alt="">
                 <p>Alarmes</p></li>
-
-                <li><img src="imagem/controle-acesso.jpg" alt="imagem camera de segurança">
+            
+                <li>
+                <img src="imagem/cameras-seguranca.jpg" alt="imagem camera de segurança">
                 <p>Câmeras de Segurança</p></li>
-
-                <li><img src="imagem/controle-de-acesso.jpg" alt="imagem de controle-acesso">
+                <li><img src="imagem/controle-de-acesso.jpg" alt="">
                 <p>Controle de Acesso</p></li>
-
-                <li><img src="imagem/cerca-eletrica.jpg" alt="imagem de cerca eletrica">
+                <li><img src="imagem/cerca-eletrica.jpg" alt="">
                 <p>Cercas Elétricas<p></li>
-
-                <li><img src="imagem/automacao-portao.jpeg" alt="Imagem de automação de portão para veiculo">
-                <p>Automação de Portão</p></li>
             </ul>
 
         </section>
 
-       
+        <section class="contato">
+            <h2>Contato</h2>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main> 
-  
-    <footer class="rodape">
+
+    <aside class="lateral">
+        
+    </aside>
+
+    <footer>
         <p>&copy; Tecnoman 2024</p>
     </footer>
 </body>
