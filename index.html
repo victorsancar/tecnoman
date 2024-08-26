@@ -1,61 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnoman - Segurança Eletrônica</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="sobre.html">
-    <link rel="stylesheet" type="" href="faleconosco.html">
+    <title>Technoman</title>
 </head>
+<body class="corpo"> 
 
+    <!-- Cabeçalho -->
+    <header class="cabecalho__container">
+            <div>
+                <img src="imagem/logo-ok.png" alt="logo do Tecnoman" class="cabecalho__logo">
+            </div>
+        <nav  class="cabecalho">
+            <hgroup class="cabecalho__container__titulo">
+                <h1 class="cabecalho__titulo">TECHNOMAN</h1>
+                <h2 class="cabecalho__subtitulo">Segurança Eletrônica para o seu Lar ou sua empresa</h2>
+            </hgroup>
 
-<body class="corpo">
-    <header class="cabecalho">
-        <div>
-        <img src="imagem/logo-ok.png" alt="logo do Tecnoman" class="cabecalho__logo">
-        </div>
-        <nav class="cabecalho__container">
-           <hgroup>
-            <h1 class="cabecalho__titulo">TECHNOMAN</h1>
-            <h2 class="cabecalho__subtitulo">Segurança Eletrônica para o seu Lar ou sua empresa</h2>
-           </hgroup>
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__pagina" href="index.html">Home</a>
+                <a class="cabecalho__menu__pagina" href="sobre.html">Quem somos</a>
+                <!-- <a class="cabecalho__menu__pagina" href="faleconosco.html">Fale Conosco</a> -->
+            </nav>
+        </nav>
+    </header>
 
-        <div class="cabecalho__menu">
-            <a class="cabecalho__menu__pagina" href="index.html">Home</a>
-            <a class="cabecalho__menu__pagina" href="sobre.html">Quem somos</a>
-            <a class="cabecalho__menu__pagina" href="faleconosco.html">Fale Conosco</a>
-        </div>
-        </nav>  
-    </header>                                                                                                                                
-
+    <!-- Serviços -->
     <main>
+        <h2 class="servicos__titulo">Serviços</h2>
         <section class="servicos">
-             <h2 class="servicos__titulo">Serviços</h2>   
-            <ul class="container__servico"></ul>
-                 <li><img src="imagem/alarmes.jpg" alt="Imagens de alarmes">
-                <p>Alarmes</p></li>
+                
+            <ul class="container__servico"></ul> 
+                 <li><img class="servico__imagem" src=imagem/sistemas-alarmes.jpg alt="Imagens de alarmes">
+                <p class="servico__descricao__imagem">Alarmes</p></li>
 
-                <li><img src="imagem/controle-acesso.jpg" alt="imagem camera de segurança">
-                <p>Câmeras de Segurança</p></li>
+                <li><img class="servico__imagem" src="imagem/cameras-seguranca.jpg" alt="imagem camera de segurança">
+                <p class="servico__descricao__imagem">Câmeras de Segurança</p></li>
 
-                <li><img src="imagem/controle-de-acesso.jpg" alt="imagem de controle-acesso">
-                <p>Controle de Acesso</p></li>
+                <li><img class="servico__imagem" src="imagem/controle-de-acesso.jpg" alt="imagem de controle-acesso">
+                <p class="servico__descricao__imagem">Controle de Acesso</p></li>
 
-                <li><img src="imagem/cerca-eletrica.jpg" alt="imagem de cerca eletrica">
-                <p>Cercas Elétricas<p></li>
+                <li><img class="servico__imagem" src="imagem/cerca-eletrica.jpg" alt="imagem de cerca eletrica">
+                <p class="servico__descricao__imagem">Cercas Elétricas<p></li>
 
-                <li><img src="imagem/automacao-portao.jpeg" alt="Imagem de automação de portão para veiculo">
-                <p>Automação de Portão</p></li>
+                <li><img class="servico__imagem" src="imagem/automacao-portao.jpeg" alt="Imagem de automação de portão para veiculo">
+                <p class="servico__descricao__imagem">Automação de Portão</p></li>
             </ul>
-
         </section>
 
-       
-    </main> 
-  
+        <section class="faleconosco">
+            <h1 class="faleconosco__titulo">Fale Conosco</h1>
+            <h2 class="faleconosco__subtitulo"> Click nos icones abaixo</h2>
+            <img class="faleconosco__imagem__maoclik" src="imagem/mao-clik.gif" alt="imagem de uma mão clicando">          
+
+            <div class="faleconosco__container">
+                <div class="faleconosco__botao">
+                        <a class="faleconosco__link" href="https://www.instagram.com/technoman_seg/"><img class="faleconosco__imagem" src="imagem/instagram.png" alt="icone do instagram">@technoman_seg</a>
+                </div> 
+    
+                <div  class="faleconosco__botao">  
+                        <a class="faleconosco__link" href="https://login.yahoo.com/?.src=ym&pspid=159600001&activity=mail-direct&.lang=fr-FR&.intl=fr&.done=https%3A%2F%2Ffr.mail.yahoo.com%2Fd"><img class="faleconosco__imagem"  src="imagem/email.png" alt="icone do email ">technoman.seg@yahoo.com</a>   
+                </div>
+    
+                <div  class="faleconosco__botao">
+                    <a class="faleconosco__link" href="https://w.app/Technoman"><img class="faleconosco__imagem"  src="imagem/whatsapp.png" alt="icone do whatsapp ">(71)98833-9217</a>
+                </div>       
+    
+            </div>
+
+        </section>
+    </main>
+
     <footer class="rodape">
-        <p>&copy; Tecnoman 2024</p>
+        <p>&copy; TECHNOMAN 2024</p>
     </footer>
 </body>
 </html>
