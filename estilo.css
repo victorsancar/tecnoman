@@ -109,21 +109,7 @@
     margin-top: 8%;
     margin-left: 5%;
 }
-.faleconosco__subtitulo{
-    width: 350px;
-    font-size: 1.5rem;
-    position: relative;
-    left: 25%;
-    margin-top: 5%;
-}
 
-.faleconosco__imagem__maoclik{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    left: 9%;
-    margin-top: 8%;
-}
 
 .servico__imagem{
     width: 280px;
@@ -148,6 +134,22 @@
     font-size: 2rem;
     font-family: var(--font-primario);
     width: 400px;
+}
+
+.faleconosco__subtitulo{
+    width: 350px;
+    font-size: 1.5rem;
+    position: relative;
+    left: 25%;
+    margin-top: 5%;
+}
+
+.faleconosco__imagem__maoclik{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 9%;
+    margin-top: 8%;
 }
 
 .faleconosco__container {
@@ -175,6 +177,7 @@
     color: var(--cor-terciaria);
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 .sobre__titulo{
     font-family: var(--font-primaria-one);
@@ -200,3 +203,76 @@
     position: relative;
     background-image: linear-gradient(to right, rgb(9, 9, 49), rgb(18, 43, 112));
 }
+
+
+@media (max-width: 1200px){
+    
+    .cabecalho__container{
+        width: 119.5%;
+    }
+       
+    .cabecalho__titulo{
+        font-size: 1.5rem;
+    }
+    .cabecalho__subtitulo{
+        font-size: 1rem;
+    }
+
+    .cabecalho__logo{
+        width: 90px;
+        margin-top: -2%;
+    }
+
+    .cabecalho__container__titulo{
+        margin-top: 20%;
+    }
+
+    .cabecalho__menu__pagina{
+        font-size: 1rem;
+        margin-top: 1%;
+    }
+
+    .servicos{
+        flex-direction: column;
+        margin-left: 20%;
+        gap: 50px;
+    }
+    
+    .servico__descricao__imagem{
+        text-align: start;
+    }
+
+    .faleconosco{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .faleconosco__titulo{
+        margin-left: 15%;
+    }
+
+    .faleconosco__subtitulo{
+    margin-left: -5%;
+    }
+
+    .faleconosco__imagem__maoclik{
+        margin-left: 27%;
+    }
+
+    .faleconosco__container{
+        flex-direction: column;
+        gap: 40px;
+        margin-left: 28%;
+        margin-top: 5%;
+    }
+
+    .faleconosco__link{
+       margin-left: 25%;
+    }
+    
+    .rodape{
+        width: 109.4%;
+        padding: 24px;
+    }
+}
+
