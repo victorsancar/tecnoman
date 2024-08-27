@@ -212,15 +212,16 @@
     }
        
     .cabecalho__titulo{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        margin-left: 5%;
     }
     .cabecalho__subtitulo{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .cabecalho__logo{
         width: 90px;
-        margin-top: -2%;
+        margin-top: -4%;
     }
 
     .cabecalho__container__titulo{
@@ -229,7 +230,7 @@
 
     .cabecalho__menu__pagina{
         font-size: 1rem;
-        margin-top: 1%;
+        margin-top: -5%;
     }
 
     .servicos{
@@ -252,7 +253,7 @@
     }
 
     .faleconosco__subtitulo{
-    margin-left: -5%;
+        margin-left: -5%;
     }
 
     .faleconosco__imagem__maoclik{
